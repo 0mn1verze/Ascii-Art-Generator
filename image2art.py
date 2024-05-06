@@ -55,7 +55,7 @@ class Image2Art:
           else:
             draw.text((x, y), self.pix2char(g), font=Image2Art.FONT, fill=255)
 
-    output_image.save("ascii_art.png")
+    output_image.save(f"python_logo_ascii.png")
 
-art = Image2Art("image-wallpaper-15-1607202000.jpg", False)
+art = Image2Art("python_logo.png", False)
 art.save_art()
